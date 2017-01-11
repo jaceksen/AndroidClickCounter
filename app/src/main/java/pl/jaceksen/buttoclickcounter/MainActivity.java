@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private Button button;
     private TextView textView;
 
-    privet int numTimesClicked = 0;
+    private int numTimesClicked = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
