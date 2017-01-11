@@ -23,15 +23,22 @@ public class MainActivity extends AppCompatActivity {
         userInput = (EditText) findViewById(R.id.editText);
         button = (Button) findViewById(R.id.button);
         textView = (TextView) findViewById(R.id.textView);
+        //czyszczenie pola TextView
+        //ustawiamy setText a nie append
+        textView.setText("");
 
         View.OnClickListener ourOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 numTimesClicked = numTimesClicked + 1;
-                String result = "\nThe button got tapped "
+                String result = "\nThe button got tapped " + numTimesClicked + " time";
+                if(numTimesClicked != 1){
+                    result += "s";
+                }
+                textView.append(result);
             }
-        }
-
+        };
+        button.setOnClickListener(ourOnClickListener);
     }
 }
 
