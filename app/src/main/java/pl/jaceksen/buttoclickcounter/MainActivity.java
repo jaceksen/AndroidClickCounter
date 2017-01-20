@@ -12,11 +12,10 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     private EditText userInput;
-//    private Button button;
+    //    private Button button;
     private TextView textView;
     private static final String TAG = "MainActivity";
     private final String TEXT_CONTENTS = "TextContents";
-
 
 
     @Override
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         };
-            button.setOnClickListener(ourOnClickListener);
+        button.setOnClickListener(ourOnClickListener);
         Log.d(TAG, "onCreate: out");
     }
 
